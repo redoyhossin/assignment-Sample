@@ -1,9 +1,10 @@
+import TvOnlineVideo from "./TvOnlineVideo/TvOnlineVideo";
 
 
 const Brands = () => {
     return (
         <div>
-            <h1>Brands</h1>
+           <TvOnlineVideo/>
         </div>
     );
 };
