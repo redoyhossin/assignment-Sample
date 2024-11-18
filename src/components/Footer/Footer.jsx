@@ -37,7 +37,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                    className="underline hover:no-underline transition hover:text-white"
+                    className="underline hover:no-underline transition hover:text-blue-gray-800"
                     href="#"
                   >
                     রুপসীতে বাংলাদেশ এডিবল অয়েল লিমিটেডের ত্রাণ বিতরণ
@@ -46,7 +46,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                   className="underline hover:no-underline transition hover:text-white"
+                   className="underline hover:no-underline transition hover:text-blue-gray-800"
                     href="#"
                   >
                     রূপচাঁদা সুপার শেফ ২০১৯ এর যাত্রা শুরু
@@ -55,7 +55,7 @@ const Footer = () => {
 
                 <li>
                   <a
-                  className="underline hover:no-underline transition hover:text-white"
+                  className="underline hover:no-underline transition hover:text-blue-gray-800"
                     href="#"
                   >
                     রূপচাঁদা সরিষার তেল অন্যদিন আবহমান রেসিপি প্রতিযোগিতা
