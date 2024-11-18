@@ -25,14 +25,14 @@ const TvOnlineVideo = () => {
 
   console.log(CartImg);
   return (
-    <div>
-      <h1>YouTube Video Details</h1>
+    <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 justify-items-center">
+      
 
       {CartImg.map((CalsData) => (
-        <div className="App" key={CalsData.id}>
+        <div className="" key={CalsData.id}>
           <iframe
-            width="300"
-            height="300"
+            width="350"
+            height="215"
             src={CalsData.url}
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
