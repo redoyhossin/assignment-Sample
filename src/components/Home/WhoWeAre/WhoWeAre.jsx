@@ -51,7 +51,7 @@ const WhoWeAre = () => {
             <div className="mt-12 ">
               <Link 
                 className="group relative inline-flex items-center overflow-hidden rounded  px-8 py-3  text-white bg-blue-900 hover:bg-[#27272a]"
-                // to="/AboutUs"
+                to="/AboutUs"
               >
                 <span className="absolute -start-full transition-all group-hover:start-4">
                   <svg
