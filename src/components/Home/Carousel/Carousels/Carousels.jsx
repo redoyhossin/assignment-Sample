@@ -10,20 +10,18 @@ const Carousels = () => {
 
 
     useEffect(() => {
-      // Fetch data when the component mounts
-      fetch('data.json') // Replace with your API URL
-        .then((response) => response.json()) // Parse the JSON
+      // Fetch data 
+      fetch('data.json') //  API URL
+        .then((response) => response.json()) 
         .then((data) => {
           setCarouselImg(data[0]); // Set the fetched data
           setLoading(false); // Set loading to false
         })
         .catch((error) => {
-          console.error('Error fetching data:', error); // Handle errors
+          console.error('Error fetching data:', error); 
           setLoading(false);
         });
-    }, []); // Empty dependency array means this effect runs only once when the component mounts
-  
-    // Display loading indicator or data once it is fetched
+    }, []); 
     if (loading) {
       return <div>Loading...</div>;
     }

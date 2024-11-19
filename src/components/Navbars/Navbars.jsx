@@ -248,8 +248,11 @@ const NavList = () => {
   );
 };
 
+console.log(NavList,AboutUs,BRANDS)
+
 const Navbars = () => {
   const [openNav, setOpenNav] = useState(false);
+  
 
   useEffect(() => {
     window.addEventListener(
@@ -257,6 +260,8 @@ const Navbars = () => {
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
   }, []);
+
+  console.log(openNav)
   return (
     <Navbar className="mx-auto max-w-full  px-16 py-4 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
