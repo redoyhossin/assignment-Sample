@@ -1,10 +1,9 @@
-import TvOnlineVideo from "./TvOnlineVideo/TvOnlineVideo";
-
+import React from 'react';
 
 const Brands = () => {
     return (
         <div>
-           <TvOnlineVideo/>
+            
         </div>
     );
 };

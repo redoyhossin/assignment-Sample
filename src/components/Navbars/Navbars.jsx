@@ -58,14 +58,23 @@ const AboutUs = () => {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden rounded-xl lg:block">
-          <MenuItem>Company History</MenuItem>
+        <Link to="/CompanyHistory" >
+            <MenuItem>Company History</MenuItem>
+          </Link>
+          <Link to="/MissionandVision" >
           <MenuItem>Mission and Vision</MenuItem>
+          </Link>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={AboutUsMobileOpen}>
-          <MenuItem>Company History</MenuItem>
+          <Link to="/CompanyHistory" >
+            <MenuItem>Company History</MenuItem>
+          </Link>
+          <Link to="/MissionandVision" >
           <MenuItem>Mission and Vision</MenuItem>
+          </Link>
+          
         </Collapse>
       </div>
     </div>
@@ -248,11 +257,8 @@ const NavList = () => {
   );
 };
 
-console.log(NavList,AboutUs,BRANDS)
-
 const Navbars = () => {
   const [openNav, setOpenNav] = useState(false);
-  
 
   useEffect(() => {
     window.addEventListener(
@@ -261,7 +267,6 @@ const Navbars = () => {
     );
   }, []);
 
-  console.log(openNav)
   return (
     <Navbar className="mx-auto max-w-full  px-16 py-4 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">

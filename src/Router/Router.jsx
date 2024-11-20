@@ -10,6 +10,8 @@ import Career from "../components/Career/Career";
 import Contact from "../components/Contact/Contact";
 import MilContact from "../components/MilContact/MilContact";
 import Try from "../Try/Try";
+import CompanyHistory from "../components/AboutUs/CompanyHistory/CompanyHistory";
+import MissionandVision from "../components/AboutUs/MissionandVision";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +46,14 @@ export const router = createBrowserRouter([
         path: "/MilContact",
         element: <MilContact/>,
       },
+      {
+       path:"/CompanyHistory",
+       element:<CompanyHistory/>,
+      },
+      {
+        path:"/MissionandVision",
+        element:<MissionandVision/>,
+       },
       {
         path:'/Try',
         element:<Try/>
