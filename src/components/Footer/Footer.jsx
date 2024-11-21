@@ -158,7 +158,7 @@ const Footer = () => {
               <ul className="mt-8 flex justify-center lg:justify-start gap-6 md:gap-8">
                 <li>
                   <a
-                    href="https://web.facebook.com/?_rdc=1&_rdr#"
+                    href="https://web.facebook.com/BEOL.BD/?_rdc=1&_rdr"
                     rel="noreferrer"
                     target="_blank"
                   >
@@ -166,12 +166,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" rel="noreferrer" target="_blank">
+                  <a href="https://www.youtube.com/channel/UCpiPK2CLqt-sy5LdswICt1w" rel="noreferrer" target="_blank">
                     <FaYoutube className="text-white text-4xl" />
                   </a>
                 </li>
                 <li>
-                  <a href="#" rel="noreferrer" target="_blank">
+                  <a href="https://www.linkedin.com/company/bangladesh-edible-oil-limited/" rel="noreferrer" target="_blank">
                     <FaLinkedin className="text-white text-4xl" />
                   </a>
                 </li>

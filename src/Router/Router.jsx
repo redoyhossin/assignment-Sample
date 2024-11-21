@@ -12,6 +12,7 @@ import MilContact from "../components/MilContact/MilContact";
 import Try from "../Try/Try";
 import CompanyHistory from "../components/AboutUs/CompanyHistory/CompanyHistory";
 import MissionandVision from "../components/AboutUs/MissionandVision";
+import BrandDynamicCards from "../components/Brands/BrandsCard/BrandDynamicCards/BrandDynamicCards";
 
 export const router = createBrowserRouter([
   {
@@ -30,6 +31,11 @@ export const router = createBrowserRouter([
       {
         path: "/Brands",
         element: <Brands/>
+      },
+      
+      {
+        path:"/BrandsCard/:id",
+        element:<BrandDynamicCards/>
       },
       {
         path: "/MediaCenter",
