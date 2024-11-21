@@ -58,23 +58,22 @@ const AboutUs = () => {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden rounded-xl lg:block">
-        <Link to="/CompanyHistory" >
+          <Link to="/CompanyHistory">
             <MenuItem>Company History</MenuItem>
           </Link>
-          <Link to="/MissionandVision" >
-          <MenuItem>Mission and Vision</MenuItem>
+          <Link to="/MissionandVision">
+            <MenuItem>Mission and Vision</MenuItem>
           </Link>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={AboutUsMobileOpen}>
-          <Link to="/CompanyHistory" >
+          <Link to="/CompanyHistory">
             <MenuItem>Company History</MenuItem>
           </Link>
-          <Link to="/MissionandVision" >
-          <MenuItem>Mission and Vision</MenuItem>
+          <Link to="/MissionandVision">
+            <MenuItem>Mission and Vision</MenuItem>
           </Link>
-          
         </Collapse>
       </div>
     </div>
@@ -85,55 +84,88 @@ const BRANDS = () => {
   const [BRANDSOpen, setBRANDS] = useState(false);
   const [BRANDSMobileOpen, setBRANDSMobileMenuOpen] = useState(false);
 
+  // dynamic
+  const [navApi, setNavApi] = useState([]);
+
+  useEffect(() => {
+    // Fetch data
+    fetch("data.json") // URL
+      .then((response) => response.json())
+      .then((data) => {
+        setNavApi(data[1]); // Set the fetched data
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error); // Handle errors
+      });
+  }, []);
+
+  // console.log(navApi);
+
   return (
     <div>
-      <Menu
-        open={BRANDSOpen}
-        handler={setBRANDS}
-        placement="bottom"
-        allowHover={true}
-      >
-        <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
-            <Link to="/Brands">
-              <ListItem
-                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
-                selected={BRANDSOpen || BRANDSMobileOpen}
-                onClick={() => setBRANDSMobileMenuOpen((cur) => !cur)}
-              >
-                BRANDS
-                <ChevronDownIcon
-                  strokeWidth={2.5}
-                  className={`hidden h-3 w-3 transition-transform lg:block ${
-                    BRANDSOpen ? "rotate-180" : ""
-                  }`}
-                />
-                <ChevronDownIcon
-                  strokeWidth={2.5}
-                  className={`block h-3 w-3 transition-transform lg:hidden ${
-                    BRANDSMobileOpen ? "rotate-180" : ""
-                  }`}
-                />
-              </ListItem>
-            </Link>
-          </Typography>
-        </MenuHandler>
-        <MenuList className="hidden rounded-xl lg:block">
-          <MenuItem>Rupchanda</MenuItem>
-          <MenuItem>Fortune</MenuItem>
-          <MenuItem>Kings</MenuItem>
-          <MenuItem>Veola</MenuItem>
-          <MenuItem>Meizan </MenuItem>
-        </MenuList>
-      </Menu>
-      <div className="block lg:hidden">
-        <Collapse open={BRANDSMobileOpen}>
-          <MenuItem>Rupchanda</MenuItem>
-          <MenuItem>Fortune</MenuItem>
-          <MenuItem>Kings</MenuItem>
-          <MenuItem>Veola</MenuItem>
-          <MenuItem>Meizan </MenuItem>
-        </Collapse>
+      <div>
+        <Menu
+          open={BRANDSOpen}
+          handler={setBRANDS}
+          placement="bottom"
+          allowHover={true}
+        >
+          <MenuHandler>
+            <Typography as="div" variant="small" className="font-medium">
+              <Link to="/Brands">
+                <ListItem
+                  className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                  selected={BRANDSOpen || BRANDSMobileOpen}
+                  onClick={() => setBRANDSMobileMenuOpen((cur) => !cur)}
+                >
+                  BRANDS
+                  <ChevronDownIcon
+                    strokeWidth={2.5}
+                    className={`hidden h-3 w-3 transition-transform lg:block ${
+                      BRANDSOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                  <ChevronDownIcon
+                    strokeWidth={2.5}
+                    className={`block h-3 w-3 transition-transform lg:hidden ${
+                      BRANDSMobileOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </ListItem>
+              </Link>
+            </Typography>
+          </MenuHandler>
+
+          <MenuList className="hidden rounded-xl lg:block">
+            {navApi.map((navAp) => {
+              console.log(navAp);
+              const { logoimg, id, img, logoname, logotitle } = navAp;
+              return (
+                <Link key={id}>
+                  <MenuItem to={`/BrandsCard/${id}`} state={navAp}>
+                    {logoname}
+                  </MenuItem>
+                </Link>
+              );
+            })}
+          </MenuList>
+        </Menu>
+
+        <div className="block lg:hidden">
+          <Collapse open={BRANDSMobileOpen}>
+            {navApi.map((navAp) => {
+              console.log(navAp);
+              const { logoimg, id, img, logoname, logotitle } = navAp;
+              return (
+                <MenuItem key={id}>
+                  <Link to={`/BrandsCard/${id}`} state={navAp}>
+                    {logoname}
+                  </Link>
+                </MenuItem>
+              );
+            })}
+          </Collapse>
+        </div>
       </div>
     </div>
   );
@@ -268,7 +300,7 @@ const Navbars = () => {
   }, []);
 
   return (
-    <Navbar className="mx-auto max-w-full  px-16 py-4 rounded-none">
+    <Navbar className="mx-auto max-w-full  lg:px-16 py-4 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link aria-label="Home" to={`/`}>
           <img

@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const OurBrandsCard = ({ Brand }) => {
   // console.log(Brand);
   const { id, logoimg, logoname, logotitle } = Brand;
@@ -23,7 +25,7 @@ const OurBrandsCard = ({ Brand }) => {
           {logotitle}
         </p>
 
-        <a
+        <Link to={`/BrandsCard/${id}`} state={Brand}
           href="#"
           className=" hover:text-blue-800 group mt-4 inline-flex items-center gap-1 text-base  font-semibold pb-4 text-gray-700 hover:text-[15px] transform hover:scale-95 transition-all duration-300 ease-in-out"
         >
@@ -31,7 +33,7 @@ const OurBrandsCard = ({ Brand }) => {
           <span aria-hidden="true" className="">
             &rarr;
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );

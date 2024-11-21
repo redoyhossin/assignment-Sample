@@ -23,7 +23,7 @@ const Brands = () => {
     return <div>Loading...</div>;
   }
 
-
+// console.log(Brands)
   return (
     <div className="mx-auto max-w-screen-xl">
 
