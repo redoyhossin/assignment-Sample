@@ -49,7 +49,7 @@ const BrandDynamicCards = () => {
         <p className="leading-loose">{footerdetails && footerdetails}</p>
         {/* media */}
         <ul className="flex justify-center lg:justify-start gap-2 md:gap-3">
-          <li className="bg-[#3b5998] p-2">
+          <li className="bg-[#3b5998] p-2 transition hover:scale-90">
             <a
               href="https://web.facebook.com/rupchandabd/?_rdc=1&_rdr#"
               rel="noreferrer"
@@ -58,7 +58,7 @@ const BrandDynamicCards = () => {
               <FaFacebookSquare className="text-white text-4xl rounded-full" />
             </a>
           </li>
-          <li className="bg-[#cd201f] p-2">
+          <li className="bg-[#cd201f] p-2 transition hover:scale-90">
             <a
               href="https://www.youtube.com/channel/UCFcBlDUoLaGbFQEoRvvb8zw"
               rel="noreferrer"

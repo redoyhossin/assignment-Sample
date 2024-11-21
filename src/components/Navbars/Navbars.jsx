@@ -138,11 +138,11 @@ const BRANDS = () => {
 
           <MenuList className="hidden rounded-xl lg:block">
             {navApi.map((navAp) => {
-              console.log(navAp);
+             
               const { logoimg, id, img, logoname, logotitle } = navAp;
               return (
-                <Link key={id}>
-                  <MenuItem to={`/BrandsCard/${id}`} state={navAp}>
+                <Link key={id} to={`/BrandsCard/${id}`} state={navAp}>
+                  <MenuItem >
                     {logoname}
                   </MenuItem>
                 </Link>
@@ -154,14 +154,14 @@ const BRANDS = () => {
         <div className="block lg:hidden">
           <Collapse open={BRANDSMobileOpen}>
             {navApi.map((navAp) => {
-              console.log(navAp);
+            
               const { logoimg, id, img, logoname, logotitle } = navAp;
               return (
-                <MenuItem key={id}>
-                  <Link to={`/BrandsCard/${id}`} state={navAp}>
-                    {logoname}
-                  </Link>
+                <Link key={id} to={`/BrandsCard/${id}`} state={navAp}>
+                <MenuItem >
+                  {logoname}
                 </MenuItem>
+              </Link>
               );
             })}
           </Collapse>

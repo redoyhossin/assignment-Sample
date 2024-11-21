@@ -1,12 +1,11 @@
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const BrandsCard = (Brand) => {
-  // const { logoimg, id, img, logoname, logotitle } = Brand;
-  // console.log(Brand)
+const BrandsCard = ({Brand}) => {
+  const { logoimg, id, img, logoname, logotitle } = Brand;
   
   return (
     <div>
-      {/* <div className="   border border-blue-gray-50 bg-white  shadow-lg   transition hover:drop-shadow-2xl text-center ">
+      <div className="   border border-blue-gray-50 bg-white  shadow-lg   transition hover:drop-shadow-2xl text-center ">
         <div className="bg-[#0B60A90F] p-5" >
           <img
             className=""
@@ -35,7 +34,7 @@ const BrandsCard = (Brand) => {
           </span>
         </Link>
        </div>
-      </div> */}
+      </div>
     </div>
   );
 };
