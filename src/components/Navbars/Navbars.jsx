@@ -209,7 +209,10 @@ const MediaCenter = () => {
           </Typography>
         </MenuHandler>
         <MenuList className="hidden rounded-xl lg:block">
-          <MenuItem>TV and Online Video Commercial</MenuItem>
+          
+          <Link to="/TvOnlineVideo">
+            <MenuItem>TV and Online Video Commercial</MenuItem>
+          </Link>
           <MenuItem>Press Advertisement</MenuItem>
           <MenuItem>Press Release</MenuItem>
           <MenuItem>Gallery</MenuItem>

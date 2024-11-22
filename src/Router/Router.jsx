@@ -13,6 +13,7 @@ import Try from "../Try/Try";
 import CompanyHistory from "../components/AboutUs/CompanyHistory/CompanyHistory";
 import MissionandVision from "../components/AboutUs/MissionandVision";
 import BrandDynamicCards from "../components/Brands/BrandsCard/BrandDynamicCards/BrandDynamicCards";
+import TvOnlineVideo from "../components/MediaCenter/TvOnlineVideo/TvOnlineVideo";
 
 export const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ export const router = createBrowserRouter([
       {
         path: "/MediaCenter",
         element: <MediaCenter/>
+      },
+      {
+        path: "/TvOnlineVideo",
+        element: <TvOnlineVideo/>
       },
       {
         path: "/Career",
