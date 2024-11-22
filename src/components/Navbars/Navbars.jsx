@@ -213,17 +213,31 @@ const MediaCenter = () => {
           <Link to="/TvOnlineVideo">
             <MenuItem>TV and Online Video Commercial</MenuItem>
           </Link>
-          <MenuItem>Press Advertisement</MenuItem>
-          <MenuItem>Press Release</MenuItem>
-          <MenuItem>Gallery</MenuItem>
+          <Link to="/PressAdvertisement">
+            <MenuItem>Press Advertisement</MenuItem>
+          </Link>
+          <Link to="/PressRelease">
+            <MenuItem>Press Release</MenuItem>
+          </Link>
+          <Link to="/GalleryHome">
+            <MenuItem>Gallery</MenuItem>
+          </Link>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={MobileMediaCenter}>
-          <MenuItem>TV and Online Video Commercial</MenuItem>
-          <MenuItem>Press Advertisement</MenuItem>
-          <MenuItem>Press Release</MenuItem>
-          <MenuItem>Gallery</MenuItem>
+        <Link to="/TvOnlineVideo">
+            <MenuItem>TV and Online Video Commercial</MenuItem>
+          </Link>
+          <Link to="/PressAdvertisement">
+            <MenuItem>Press Advertisement</MenuItem>
+          </Link>
+          <Link to="/PressRelease">
+            <MenuItem>Press Release</MenuItem>
+          </Link>
+          <Link to="/GalleryHome">
+            <MenuItem>Gallery</MenuItem>
+          </Link>
         </Collapse>
       </div>
     </div>

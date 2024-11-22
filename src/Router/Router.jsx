@@ -14,6 +14,9 @@ import CompanyHistory from "../components/AboutUs/CompanyHistory/CompanyHistory"
 import MissionandVision from "../components/AboutUs/MissionandVision";
 import BrandDynamicCards from "../components/Brands/BrandsCard/BrandDynamicCards/BrandDynamicCards";
 import TvOnlineVideo from "../components/MediaCenter/TvOnlineVideo/TvOnlineVideo";
+import PressAdvertisement from "../components/MediaCenter/PressAdvertisement/PressAdvertisement";
+import PressRelease from "../components/MediaCenter/PressRelease/PressRelease";
+import GalleryHome from "../components/MediaCenter/GalleryHome/GalleryHome";
 
 export const router = createBrowserRouter([
   {
@@ -45,6 +48,18 @@ export const router = createBrowserRouter([
       {
         path: "/TvOnlineVideo",
         element: <TvOnlineVideo/>
+      },
+      {
+        path: "/PressAdvertisement",
+        element: <PressAdvertisement/>
+      },
+      {
+        path: "/PressRelease",
+        element: <PressRelease/>
+      },
+      {
+        path: "/GalleryHome",
+        element: <GalleryHome/>
       },
       {
         path: "/Career",

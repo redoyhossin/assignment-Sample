@@ -145,5 +145,48 @@
       "id": 14,
       "url": "https://www.youtube.com/embed/W5KHEiGm6rs?si=OrmtA3lhoi6xjaak"
     }
+  ],
+  [
+    {
+      "id": 1,
+      "name": "BEOL Job Fair",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/h1-300x225.jpg"
+    },
+    {
+      "id": 2,
+      "name": "BEOL Family Day",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/familyday-300x200.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Employee Engagement Activities",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/anga-300x169.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Employee Learning Programs",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/learning-300x225.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Employee Safety Awareness Program",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/b0547839883659a9b088b216d40e5ee2IMG_20180412_171417-1000-300x225.jpg"
+    },
+    {
+      "id": 6,
+      "name": "New Joiner's Orientation",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/2-300x225.jpg"
+    },
+    {
+      "id": 7,
+      "name": "CSR Activities",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/10bdb501c08ff64a6569d08466321b8714-1280-300x146.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Social Responsibility",
+      "img": "https://beol-bd.com/wp-content/uploads/2022/07/d5d4b0d5cbbcf447e3a08348195c7a42444-1280-300x200.jpg"
+    }
   ]
+  
 ]
