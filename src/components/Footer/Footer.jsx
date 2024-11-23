@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer>
-        <div className="  pt-16 ">
+        <div className="">
           <div
             className="grid grid-cols-1 gap-8 lg:grid-cols-4 py-8 px-10 " 
             style={{ backgroundColor: "#2e363a" }}

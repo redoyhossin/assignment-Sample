@@ -1,7 +1,7 @@
 const Contactform = () => {
   return (
-    <div className="w-full">
-      <div className="relative flex flex-col px-4 py-6 bg-transparent bg-white">
+    <div className="px-4 w-full mb-4">
+      <div className="relative flex flex-col px-4 py-6 bg-transparent bg-white  ">
         <h4 className="block text-2xl font-bold ">Drop us A Line</h4>
 
         <form className="mt-8 mb-2 ">
