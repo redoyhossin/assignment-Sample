@@ -8,7 +8,6 @@ import Brands from "../components/Brands/Brands";
 import MediaCenter from "../components/MediaCenter/MediaCenter";
 import Career from "../components/Career/Career";
 import Contact from "../components/Contact/Contact";
-import MilContact from "../components/MilContact/MilContact";
 import Try from "../Try/Try";
 import CompanyHistory from "../components/AboutUs/CompanyHistory/CompanyHistory";
 import MissionandVision from "../components/AboutUs/MissionandVision";
@@ -17,6 +16,7 @@ import TvOnlineVideo from "../components/MediaCenter/TvOnlineVideo/TvOnlineVideo
 import PressAdvertisement from "../components/MediaCenter/PressAdvertisement/PressAdvertisement";
 import PressRelease from "../components/MediaCenter/PressRelease/PressRelease";
 import GalleryHome from "../components/MediaCenter/GalleryHome/GalleryHome";
+import SignUp from "../components/SignUp/SignUp";
 
 export const router = createBrowserRouter([
   {
@@ -68,9 +68,10 @@ export const router = createBrowserRouter([
       {
         path: "/Contact",
         element:<Contact/>,
-      },{
-        path: "/MilContact",
-        element: <MilContact/>,
+      },
+      {
+        path: "/SignUp",
+        element: <SignUp/>,
       },
       {
        path:"/CompanyHistory",

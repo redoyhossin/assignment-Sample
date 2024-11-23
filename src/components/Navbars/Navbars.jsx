@@ -296,7 +296,7 @@ const NavList = () => {
         color="blue-gray"
         className="font-medium"
       >
-        <Link to="/MilContact">
+        <Link to="/SignUp">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
             WEBMAIL
           </ListItem>

@@ -1,7 +1,7 @@
 
 const MediaCenter = () => {
   return (
-    <div>
+    <div className="mb-4">
     <div className="text-center m-4">
       <h3 className="font-bold text-2xl ">Media Center</h3>
     </div>

@@ -5,7 +5,7 @@ const WhoWeAre = () => {
   return (
     <div >
       <div className="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8 ">
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 my-24">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:my-24">
           <div className="">
             <img
               alt=""
