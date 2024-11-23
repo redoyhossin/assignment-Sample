@@ -1,6 +1,7 @@
 import { useState } from "react";
 import GalleryHomeCard from "./GalleryHomeCard/GalleryHomeCard";
 import { useEffect } from "react";
+import { Helmet } from "react-helmet-async";
 
 const GalleryHome = () => {
   const [Gallerys, setGallerys] = useState([]);
@@ -38,6 +39,9 @@ const GalleryHome = () => {
   }
   return (
     <div className="mx-auto max-w-screen-xl pt-20 mb-3">
+       <Helmet>
+        <title> Gallery-Bangladesh Edible Oil Limited</title>
+      </Helmet>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-4 lg:gap-4 justify-items-center">
         {Gallerys.map((Gallery) => (
           <GalleryHomeCard key={Gallery.id} Gallery={Gallery} />

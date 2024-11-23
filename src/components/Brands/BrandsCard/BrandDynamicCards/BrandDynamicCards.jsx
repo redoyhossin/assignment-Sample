@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import { FaFacebookSquare, FaYoutube } from "react-icons/fa";
 import { useLocation } from "react-router-dom";
 
@@ -6,6 +7,7 @@ const BrandDynamicCards = () => {
   const {
     img,
     logotitle,
+    logoname,
     logoimg,
     title,
     maindetailshighlight,
@@ -21,6 +23,9 @@ const BrandDynamicCards = () => {
   // console.log(state)
   return (
     <div className="mx-auto max-w-screen-xl mb-3">
+      <Helmet>
+        <title>{logoname}-Bangladesh Edible Oil Limited</title>
+      </Helmet>
       <div className="my-5 px-6">
         <img src={img && img ? img : logoimg} alt="" />
         <p className="text-gray-800 py-5">

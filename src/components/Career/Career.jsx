@@ -1,10 +1,16 @@
+import { Helmet } from "react-helmet-async";
+
 const Career = () => {
   return (
     <div className="mb-3">
+       <Helmet>
+        <title>  Career-Bangladesh Edible Oil Limited</title>
+      </Helmet>
       <div className="text-center m-4">
         <h3 className="font-bold text-2xl ">Upcoming Career Post</h3>
       </div>
       <div className="flex flex-wrap items-center gap-12 animate-pulse justify-center mt-5">
+     
         <div className="grid bg-gray-300 rounded-lg h-36 w-36 place-items-center">
           <svg
             fill="none"

@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import PressAdvertisementCard from "./PressAdvertisementCard/PressAdvertisementCard";
+import { Helmet } from "react-helmet-async";
 
 
 const PressAdvertisement = () => {
@@ -64,6 +65,9 @@ const PressAdvertisement = () => {
 
   return (
     <div className="mx-auto max-w-screen-xl pt-20 mb-3">
+        <Helmet>
+        <title>  Press Advertisement-Bangladesh Edible Oil Limited</title>
+      </Helmet>
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">
           Press Advertisement

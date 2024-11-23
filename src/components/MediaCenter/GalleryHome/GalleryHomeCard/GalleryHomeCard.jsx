@@ -3,6 +3,7 @@ const GalleryHomeCard = ({ Gallery }) => {
 
   return (
     <div >
+      
       <div className="   border border-blue-gray-50 bg-white p-2 shadow-lg   transition hover:drop-shadow-2xl  text-center">
         <div>
           <img

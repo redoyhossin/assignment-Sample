@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet-async";
 import BrandsCard from "./BrandsCard/BrandsCard";
 
 import { useEffect, useState } from "react";
@@ -20,28 +21,32 @@ const Brands = () => {
       });
   }, []);
   if (loading) {
-    return  <div className="flex justify-center mt-4">
-    <div className="flex">
-      <div className="relative">
-        <div
-          className="w-12 h-12 rounded-full absolute
+    return (
+      <div className="flex justify-center mt-4">
+        <div className="flex">
+          <div className="relative">
+            <div
+              className="w-12 h-12 rounded-full absolute
                     border-4 border-solid border-gray-200"
-        ></div>
+            ></div>
 
-        <div
-          className="w-12 h-12 rounded-full animate-spin absolute
+            <div
+              className="w-12 h-12 rounded-full animate-spin absolute
                     border-4 border-solid border-green-500 border-t-transparent"
-        ></div>
+            ></div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
+    );
   }
 
-// console.log(Brands)
+  // console.log(Brands)
   return (
     <div className="mx-auto max-w-screen-xl">
-
-<div className="text-center my-3 ">
+      <Helmet>
+        <title>Brands-Bangladesh Edible Oil Limited</title>
+      </Helmet>
+      <div className="text-center my-3 ">
         <h2 className=" font-bold text-gray-800 md:text-3xl">Brands</h2>
         <div className="inline-block my-7">
           <hr className="bg-blue-900 h-[3px] w-24 " />

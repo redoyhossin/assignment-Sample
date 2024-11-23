@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Helmet } from "react-helmet-async";
 
 const TvOnlineVideo = () => {
   const [CartImg, setCarrlImg] = useState([]);
@@ -37,6 +38,9 @@ const TvOnlineVideo = () => {
 
   return (
     <div className="mx-auto max-w-screen-xl mb-6">
+       <Helmet>
+        <title> TV & Online Video Commercial-Bangladesh Edible Oil Limited</title>
+      </Helmet>
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">
           TV & Online Video Commercial

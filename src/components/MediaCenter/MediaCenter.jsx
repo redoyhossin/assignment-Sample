@@ -1,7 +1,11 @@
+import { Helmet } from "react-helmet-async";
 
 const MediaCenter = () => {
   return (
     <div className="mb-4">
+      <Helmet>
+        <title>Media Center-Bangladesh Edible Oil Limited</title>
+      </Helmet>
     <div className="text-center m-4">
       <h3 className="font-bold text-2xl ">Media Center</h3>
     </div>
