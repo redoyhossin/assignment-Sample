@@ -35,7 +35,6 @@ const TvOnlineVideo = () => {
   </div>
   }
 
-  console.log(CartImg);
   return (
     <div className="mx-auto max-w-screen-xl mb-6">
       <div className="text-center my-3 mb-10">

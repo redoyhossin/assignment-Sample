@@ -1,15 +1,39 @@
+import { useState } from "react";
+
 const SignUp = () => {
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+
+  const handleemail = (e) => {
+    setemail(e.target.value);
+  };
+
+  const handlepassword = (e) => {
+    setpassword(e.target.value);
+  };
+
+  const handlesubmit = (e) => {
+    e.preventDefault();
+    
+    
+  };
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <div className=" border border-blue-gray-50  p-4 shadow-lg   transition hover:drop-shadow-2xl py-24 bg-[#837070c4]">
-        <form action="#" className="mx-auto mb-0 mt-8 max-w-md space-y-4">
+        <form
+          onSubmit={handlesubmit}
+          className="mx-auto mb-0 mt-8 max-w-md space-y-4"
+        >
           <div>
-           
-
             <div className="relative">
-            <label htmlFor="email" className="font-bold text-[#2e2c2c]">Email </label>
+              <label htmlFor="email" className="font-bold text-[#2e2c2c]">
+                Email
+              </label>
               <input
+                onChange={handleemail}
                 type="email"
+                name="email"
+                id="email"
                 className="w-full rounded-lg border-gray-200 p-4 pe-12 text-sm shadow-sm outline-none"
                 placeholder="Enter email"
               />
@@ -34,12 +58,15 @@ const SignUp = () => {
           </div>
 
           <div>
-           
-
             <div className="relative">
-                <label htmlFor="password" className="font-bold text-[#2e2c2c]">Password </label>
+              <label htmlFor="password" className="font-bold text-[#2e2c2c]">
+                Password
+              </label>
               <input
+                onChange={handlepassword}
                 type="password"
+                id="password"
+                name="password"
                 className="w-full rounded-lg border-gray-200 outline-none p-4 pe-12 text-sm shadow-sm"
                 placeholder="Enter password"
               />
@@ -76,7 +103,9 @@ const SignUp = () => {
             >
               Sign in
             </button>
-            <p className="text-sm text-[#2e2c2c] font-bold cursor-pointer">Reset Password</p>
+            <p className="text-sm text-[#2e2c2c] font-bold cursor-pointer">
+              Reset Password
+            </p>
           </div>
         </form>
       </div>

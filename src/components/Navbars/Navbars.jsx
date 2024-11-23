@@ -33,10 +33,10 @@ const AboutUs = () => {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="small" className="font-bold">
             <Link to="/AboutUs">
               <ListItem
-                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                className="flex items-center gap-2 py-2 pr-4 font-bold text-gray-900"
                 selected={AboutUsOpen || AboutUsMobileOpen}
                 onClick={() => setAboutUsMobileMenuOpen((cur) => !cur)}
               >
@@ -59,20 +59,20 @@ const AboutUs = () => {
         </MenuHandler>
         <MenuList className="hidden rounded-xl lg:block">
           <Link to="/CompanyHistory">
-            <MenuItem>Company History</MenuItem>
+            <MenuItem className="font-bold">Company History</MenuItem>
           </Link>
           <Link to="/MissionandVision">
-            <MenuItem>Mission and Vision</MenuItem>
+            <MenuItem className="font-bold">Mission and Vision</MenuItem>
           </Link>
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
         <Collapse open={AboutUsMobileOpen}>
           <Link to="/CompanyHistory">
-            <MenuItem>Company History</MenuItem>
+            <MenuItem className="font-bold">Company History</MenuItem>
           </Link>
           <Link to="/MissionandVision">
-            <MenuItem>Mission and Vision</MenuItem>
+            <MenuItem className="font-bold">Mission and Vision</MenuItem>
           </Link>
         </Collapse>
       </div>
@@ -97,7 +97,7 @@ const BRANDS = () => {
       .catch((error) => {
         console.error("Error fetching data:", error); // Handle errors
       });
-  }, []);
+  }, [BRANDSOpen]);
 
   // console.log(navApi);
 
@@ -111,10 +111,10 @@ const BRANDS = () => {
           allowHover={true}
         >
           <MenuHandler>
-            <Typography as="div" variant="small" className="font-medium">
+            <Typography as="div" variant="small" className="font-bold">
               <Link to="/Brands">
                 <ListItem
-                  className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                  className="flex items-center gap-2 py-2 pr-4 font-bold text-gray-900"
                   selected={BRANDSOpen || BRANDSMobileOpen}
                   onClick={() => setBRANDSMobileMenuOpen((cur) => !cur)}
                 >
@@ -136,15 +136,12 @@ const BRANDS = () => {
             </Typography>
           </MenuHandler>
 
-          <MenuList className="hidden rounded-xl lg:block">
+          <MenuList className="hidden rounded-xl lg:block font-bold">
             {navApi.map((navAp) => {
-             
               const { logoimg, id, img, logoname, logotitle } = navAp;
               return (
                 <Link key={id} to={`/BrandsCard/${id}`} state={navAp}>
-                  <MenuItem >
-                    {logoname}
-                  </MenuItem>
+                  <MenuItem>{logoname}</MenuItem>
                 </Link>
               );
             })}
@@ -154,14 +151,16 @@ const BRANDS = () => {
         <div className="block lg:hidden">
           <Collapse open={BRANDSMobileOpen}>
             {navApi.map((navAp) => {
-            
               const { logoimg, id, img, logoname, logotitle } = navAp;
               return (
-                <Link key={id} to={`/BrandsCard/${id}`} state={navAp}>
-                <MenuItem >
-                  {logoname}
-                </MenuItem>
-              </Link>
+                <Link
+                 
+                  key={id}
+                  to={`/BrandsCard/${id}`}
+                  state={navAp}
+                >
+                  <MenuItem >{logoname}</MenuItem>
+                </Link>
               );
             })}
           </Collapse>
@@ -184,10 +183,10 @@ const MediaCenter = () => {
         allowHover={true}
       >
         <MenuHandler>
-          <Typography as="div" variant="small" className="font-medium">
+          <Typography as="div" variant="small" className="font-bold">
             <Link to="/MediaCenter">
               <ListItem
-                className="flex items-center gap-2 py-2 pr-4 font-medium text-gray-900"
+                className="flex items-center gap-2 py-2 pr-4 font-bold text-gray-900"
                 selected={MediaCenter || MobileMediaCenter}
                 onClick={() => setMobileMediaCenterOpen((cur) => !cur)}
               >
@@ -208,8 +207,7 @@ const MediaCenter = () => {
             </Link>
           </Typography>
         </MenuHandler>
-        <MenuList className="hidden rounded-xl lg:block">
-          
+        <MenuList className="hidden rounded-xl lg:block font-bold">
           <Link to="/TvOnlineVideo">
             <MenuItem>TV and Online Video Commercial</MenuItem>
           </Link>
@@ -225,8 +223,8 @@ const MediaCenter = () => {
         </MenuList>
       </Menu>
       <div className="block lg:hidden">
-        <Collapse open={MobileMediaCenter}>
-        <Link to="/TvOnlineVideo">
+        <Collapse open={MobileMediaCenter} className="font-bold">
+          <Link to="/TvOnlineVideo">
             <MenuItem>TV and Online Video Commercial</MenuItem>
           </Link>
           <Link to="/PressAdvertisement">
@@ -246,12 +244,12 @@ const MediaCenter = () => {
 
 const NavList = () => {
   return (
-    <List className="mb-6 mt-4 p-0 lg:mb-0 lg:mt-0 lg:flex-row lg:p-1">
+    <List className="mb-6 mt-4 p-0 lg:mb-0 lg:mt-0 lg:flex-row lg:p-1 ">
       <Typography
         as="div"
         variant="small"
         color="blue-gray"
-        className="font-medium"
+        className="font-bold"
       >
         <Link to={`/`}>
           <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -261,14 +259,14 @@ const NavList = () => {
       </Typography>
 
       <AboutUs />
-      <BRANDS />
+      <BRANDS  />
       <MediaCenter />
 
       <Typography
         as="div"
         variant="small"
         color="blue-gray"
-        className="font-medium"
+        className="font-bold"
       >
         <Link to="/Career">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -281,7 +279,7 @@ const NavList = () => {
         as="div"
         variant="small"
         color="blue-gray"
-        className="font-medium"
+        className="font-bold"
       >
         <Link to="/Contact">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
@@ -294,7 +292,7 @@ const NavList = () => {
         as="div"
         variant="small"
         color="blue-gray"
-        className="font-medium"
+        className="font-bold"
       >
         <Link to="/SignUp">
           <ListItem className="flex items-center gap-2 py-2 pr-4">
