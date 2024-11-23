@@ -23,7 +23,21 @@ const PressAdvertisement = () => {
       });
   }, []);
   if (loading) {
-    return <div>Loading...</div>;
+    return <div className="flex justify-center mt-4">
+    <div className="flex">
+      <div className="relative">
+        <div
+          className="w-12 h-12 rounded-full absolute
+                    border-4 border-solid border-gray-200"
+        ></div>
+
+        <div
+          className="w-12 h-12 rounded-full animate-spin absolute
+                    border-4 border-solid border-green-500 border-t-transparent"
+        ></div>
+      </div>
+    </div>
+  </div>
   }
   // console.log(Images);
 
@@ -49,7 +63,7 @@ const PressAdvertisement = () => {
   };
 
   return (
-    <div className="mx-auto max-w-screen-xl pt-20">
+    <div className="mx-auto max-w-screen-xl pt-20 mb-3">
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">
           Press Advertisement

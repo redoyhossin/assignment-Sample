@@ -1,6 +1,6 @@
 const MissionandVision = () => {
   return (
-    <div className="mx-auto max-w-screen-xl">
+    <div className="mx-auto max-w-screen-xl mb-5">
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">Our Vision</h2>
         <div className="inline-block my-7">

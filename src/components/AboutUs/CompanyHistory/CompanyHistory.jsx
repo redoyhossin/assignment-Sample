@@ -1,6 +1,6 @@
 const CompanyHistory = () => {
   return (
-    <div className="mx-auto max-w-screen-xl">
+    <div className="mx-auto max-w-screen-xl mb-4">
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">
           Company History
@@ -11,7 +11,7 @@ const CompanyHistory = () => {
         </div>
       </div>
       <div>
-        <p className=" text-gray-600 px-4">
+        <p className=" text-gray-600 px-4 leading-8">
           Bangladesh Edible Oil Limited (BEOL) was established in 1993. Ever
           since then BEOL has formed and proven the image in the competitive
           market as consumer pack edible oil under the well-known household
@@ -22,7 +22,8 @@ const CompanyHistory = () => {
           to consolidate leading position in the market. BEOL is the first
           company to introduce packing of edible oil in PET bottles, pouch and
           bag in box and also the first to launch a sachet pack in mustard oil
-          in Bangladesh. <br /> <br />
+          in Bangladesh.
+          <br /> <br />
           Rupchanda is the flagship brand of Bangladesh Edible Oil Limited. It
           has started its journey in 1996 and since then it has made its place
           as the “numero-uno” in the branded edible oil category. From the very

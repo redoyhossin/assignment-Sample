@@ -20,7 +20,7 @@ const BrandDynamicCards = () => {
   } = state;
   // console.log(state)
   return (
-    <div className="mx-auto max-w-screen-xl">
+    <div className="mx-auto max-w-screen-xl mb-3">
       <div className="my-5 px-6">
         <img src={img && img ? img : logoimg} alt="" />
         <p className="text-gray-800 py-5">
