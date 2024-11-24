@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const BrandsCard = ({Brand}) => {
   const { logoimg, id, img, logoname, logotitle } = Brand;
-  console.log(logoname)
+ 
   return (
     <div>
        

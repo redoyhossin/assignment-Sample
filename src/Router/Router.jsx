@@ -17,6 +17,7 @@ import PressAdvertisement from "../components/MediaCenter/PressAdvertisement/Pre
 import PressRelease from "../components/MediaCenter/PressRelease/PressRelease";
 import GalleryHome from "../components/MediaCenter/GalleryHome/GalleryHome";
 import SignUp from "../components/SignUp/SignUp";
+import Errorhandle from "../Errorhandle/Errorhandle";
 
 export const router = createBrowserRouter([
   {
@@ -90,5 +91,9 @@ export const router = createBrowserRouter([
 
     ],
   },
+  {
+    path:'*',
+    element:<Errorhandle/>
+  }
  
 ]);

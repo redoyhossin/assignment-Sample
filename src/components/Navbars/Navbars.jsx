@@ -97,7 +97,7 @@ const BRANDS = () => {
       .catch((error) => {
         console.error("Error fetching data:", error); // Handle errors
       });
-  }, [BRANDSOpen]);
+  }, [BRANDSMobileOpen]);
 
   // console.log(navApi);
 
@@ -114,7 +114,7 @@ const BRANDS = () => {
             <Typography as="div" variant="small" className="font-bold">
               <Link to="/Brands">
                 <ListItem
-                  className="flex items-center gap-2 py-2 pr-4 font-bold text-gray-900"
+                  className="flex items-center gap-2 py-2 pr-4 font-bold text-gray-900 "
                   selected={BRANDSOpen || BRANDSMobileOpen}
                   onClick={() => setBRANDSMobileMenuOpen((cur) => !cur)}
                 >
@@ -123,7 +123,7 @@ const BRANDS = () => {
                     strokeWidth={2.5}
                     className={`hidden h-3 w-3 transition-transform lg:block ${
                       BRANDSOpen ? "rotate-180" : ""
-                    }`}
+                    }`} 
                   />
                   <ChevronDownIcon
                     strokeWidth={2.5}
@@ -140,7 +140,7 @@ const BRANDS = () => {
             {navApi.map((navAp) => {
               const { logoimg, id, img, logoname, logotitle } = navAp;
               return (
-                <Link key={id} to={`/BrandsCard/${id}`} state={navAp}>
+                <Link key={id} to={`/BrandsCard/${id}`} state={navAp} >
                   <MenuItem>{logoname}</MenuItem>
                 </Link>
               );
