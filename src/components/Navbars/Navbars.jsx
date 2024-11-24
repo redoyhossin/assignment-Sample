@@ -322,10 +322,11 @@ const Navbars = () => {
           className="w-[150px] h-[75px]"
           
             loading="lazy"
-            src='/src/assets/SGOil.png'
+             src="/src/assets/SGOil.png"
             alt=""
           />
         </Link>
+        <img alt="" />
 
         <div className="hidden lg:block">
           <NavList />
