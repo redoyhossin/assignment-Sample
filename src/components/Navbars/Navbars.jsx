@@ -322,7 +322,7 @@ const Navbars = () => {
           className="w-[150px] h-[75px]"
           
             loading="lazy"
-             src="/src/assets/SGOil.png"
+             src={'https://i.ibb.co.com/617mdHX/SGOil.png'}
             alt=""
           />
         </Link>
