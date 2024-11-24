@@ -322,7 +322,7 @@ const Navbars = () => {
           className="w-[150px] h-[75px]"
           
             loading="lazy"
-            src='/src/assets/SGOil Refineries Limited.png'
+            src='/src/assets/SGOil.png'
             alt=""
           />
         </Link>
