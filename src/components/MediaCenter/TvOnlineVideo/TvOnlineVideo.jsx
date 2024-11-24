@@ -39,7 +39,7 @@ const TvOnlineVideo = () => {
   return (
     <div className="mx-auto max-w-screen-xl mb-6">
        <Helmet>
-        <title> TV & Online Video Commercial-Bangladesh Edible Oil Limited</title>
+        <title> TV & Online Video Commercial-SGOil Refineries Limited</title>
       </Helmet>
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">

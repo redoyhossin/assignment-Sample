@@ -21,7 +21,7 @@ const SignUp = () => {
   return (
     <div className="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
       <Helmet>
-        <title>  Webmail-Bangladesh Edible Oil Limited</title>
+        <title>  Webmail-SGOil Refineries Limited</title>
       </Helmet>
       <div className=" border border-blue-gray-50  p-4 shadow-lg   transition hover:drop-shadow-2xl py-24 bg-[#837070c4]">
         <form

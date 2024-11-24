@@ -24,7 +24,7 @@ const BrandDynamicCards = () => {
   return (
     <div className="mx-auto max-w-screen-xl mb-3">
       <Helmet>
-        <title>{logoname}-Bangladesh Edible Oil Limited</title>
+        <title>{logoname}-SGOil Refineries Limited</title>
       </Helmet>
       <div className="my-5 px-6">
         <img src={img && img ? img : logoimg} alt="" />

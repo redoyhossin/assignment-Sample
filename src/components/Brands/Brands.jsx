@@ -44,7 +44,7 @@ const Brands = () => {
   return (
     <div className="mx-auto max-w-screen-xl">
       <Helmet>
-        <title>Brands-Bangladesh Edible Oil Limited</title>
+        <title>Brands-SGOil Refineries Limited</title>
       </Helmet>
       <div className="text-center my-3 ">
         <h2 className=" font-bold text-gray-800 md:text-3xl">Brands</h2>

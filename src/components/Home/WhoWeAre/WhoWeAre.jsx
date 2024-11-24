@@ -20,32 +20,9 @@ const WhoWeAre = () => {
             </h2>
 
             <p className=" text-gray-600 mt-10 ">
-              BEOL, which embarked on its journey in 1993, has successfully
-              established a strong presence in the market, offering
-              consumer-packaged edible oils, rice and goods under renowned
-              household brands such as Rupchanda, Fortune, Meizan, King’s, Veola
-              and Lucky. Since its inception, BEOL has been highlighting the
-              quality considering the well-being of the consumers. BEOL is the
-              first ever company to introduce packing of edible oil in PET
-              bottles and pouch in Bangladesh. It is the pioneer company to
-              introduce Vitamin A Fortification in edible oil in the country.{" "}
-              <br /> <br />
-              Competing with the established domestic brands and aggressive
-              multinational corporations BEOL had a mammoth task ahead of it.
-              Rupchanda is the flagship brand of Bangladesh Edible Oil Limited.
-              It has started its journey in 1996 and since then it has made its
-              place as the “numero-uno” in the branded edible oil category. From
-              the very beginning, Rupchanda has taken steps to prepare the
-              nation about the vitality of staying fit and healthy. Most
-              significantly, for the last 3 decades BEOL’s number 1 edible oil
-              brand Rupchanda has been continuously focusing on improving the
-              quality of life of its consumers. Rupchanda Fortified Soyabean Oil
-              has been awarded as “the best edible oil brand” in Best Brand
-              Award given by Bangladesh Brand Forum, a multi-faceted knowledge
-              sharing organization in Bangladesh, for 14 consecutive years.
-              Moreover, Rupchanda received the ‘Superbrands Bangladesh’ award
-              from the same organization since the inception of both of the
-              awards.
+            SG Oil Refinery Limited is a joint-venture company that produces edible oil and exports its products to the world market. The factory is situated in Mogla EPZ and it is the highest exported of Mogla EPZ in terms of foreign currency. The main products of the refinery are palm and soybean oil. 
+
+Its’ SG Oil brand is popular in India, especially North-East India, West Bengal, Jharkhand, Bihar and Uttar Pradesh. It is also exported to Africa and the Middle-East.
             </p>
 
             <div className="mt-12 ">

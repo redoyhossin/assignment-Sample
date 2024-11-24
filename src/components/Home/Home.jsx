@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
-        <title>BEOL -Bangladesh Edible Oil Limited</title>
+        <title>SGOil-SGOil Refineries Limited</title>
       </Helmet>
       <Carousels />
       <WhoWeAre />

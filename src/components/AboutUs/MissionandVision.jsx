@@ -4,7 +4,7 @@ const MissionandVision = () => {
   return (
     <div className="mx-auto max-w-screen-xl mb-5">
       <Helmet>
-        <title>Mission and Vision-Bangladesh Edible Oil Limited</title>
+        <title>Mission and Vision-SGOil Refineries Limited</title>
       </Helmet>
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">Our Vision</h2>

@@ -253,7 +253,7 @@ const NavList = () => {
       >
         <Link to={`/`}>
           <ListItem className="flex items-center gap-2 py-2 pr-4">
-            BEOL
+              SGOIL
           </ListItem>
         </Link>
       </Typography>
@@ -318,9 +318,11 @@ const Navbars = () => {
     <Navbar className="mx-auto max-w-full  lg:px-16 py-4 rounded-none">
       <div className="flex items-center justify-between text-blue-gray-900">
         <Link aria-label="Home" to={`/`}>
-          <img
+          <img 
+          className="w-[150px] h-[75px]"
+          
             loading="lazy"
-            src={`https://beol-bd.com/wp-content/uploads/2022/07/logo.png`}
+            src='/src/assets/SGOil Refineries Limited.png'
             alt=""
           />
         </Link>

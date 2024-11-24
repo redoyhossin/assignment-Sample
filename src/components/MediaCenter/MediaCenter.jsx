@@ -4,7 +4,7 @@ const MediaCenter = () => {
   return (
     <div className="mb-4">
       <Helmet>
-        <title>Media Center-Bangladesh Edible Oil Limited</title>
+        <title>Media Center-SGOil Refineries Limited</title>
       </Helmet>
     <div className="text-center m-4">
       <h3 className="font-bold text-2xl ">Media Center</h3>

@@ -4,7 +4,7 @@ const Career = () => {
   return (
     <div className="mb-3">
        <Helmet>
-        <title>  Career-Bangladesh Edible Oil Limited</title>
+        <title>  Career-SGOil Refineries Limited</title>
       </Helmet>
       <div className="text-center m-4">
         <h3 className="font-bold text-2xl ">Upcoming Career Post</h3>

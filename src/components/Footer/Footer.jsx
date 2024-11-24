@@ -17,8 +17,9 @@ const Footer = () => {
               </strong>
 
               <p className="pt-8  leading-loose text-gray-400">
-                Bangladesh Edible Oil Limited (BEOL) was established in 1993 and
-                has since been aggressive in the marketing of consumer pack…
+              SG Oil Refinery Limited is a joint-venture company that produces edible oil and exports its products to the world market. The factory is situated in Mogla EPZ and it is the highest exported of Mogla EPZ in terms of foreign currency. The main products of the refinery are palm and soybean oil. 
+
+Its’ SG Oil brand is popular in India, especially North-East India, West Bengal, Jharkhand, Bihar and Uttar Pradesh. It is also exported to Africa and the Middle-East.
               </p>
             </div>
 

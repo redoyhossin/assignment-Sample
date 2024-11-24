@@ -4,7 +4,7 @@ const AboutUs = () => {
   return (
     <div className="mx-auto max-w-screen-xl">
       <Helmet>
-        <title>About Us-Bangladesh Edible Oil Limited</title>
+        <title>About Us-SGOil Refineries Limited</title>
       </Helmet>
       <div className="text-center my-3 mb-10">
         <h2 className=" font-bold text-gray-800 md:text-3xl">About Us</h2>
