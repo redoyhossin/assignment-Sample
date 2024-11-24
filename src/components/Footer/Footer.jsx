@@ -185,12 +185,12 @@ Its’ SG Oil brand is popular in India, especially North-East India, West Benga
               className="text-center text-xs/relaxed text-white font-medium "
               style={{ fontSize: 16 }}
             >
-              Copyright © 2022
+             
               <Link
                 to='/'
                 className="text-gray-400 underline transition hover:c hover:no-underline px-1"
               >
-                Bangladesh Edible Oil Limited (BEOL)
+               Sgoil Refineries Limited(Sgoil)
               </Link>
               . All rights reserved.
             </p>
